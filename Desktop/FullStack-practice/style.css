@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, sans-serif;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+textarea{
+    display: block;
+    width:100%;
+    color:#4caf50;
+    padding:10px;
+    margin-bottom: 10px;
+}
+form.button{
+    display:block;
+    width:100%;
+    padding:10px;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+#feed{
+    margin-top: 20px;
+}
