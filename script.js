@@ -1,22 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const postForm = document.getElementById('postForm');
-    const postContent = document.getElementById('postContent');
-    const feed = document.getElementById('feed');
+document.addEventListener('DOMContentLoaded', function () {
+    const adForm = document.getElementById('adForm');
+    const adsContainer = document.getElementById('adsContainer');
 
-    postForm.addEventListener('submit', function(e) {
+    adForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        const content = postContent.value.trim();
 
-        if (content !== "") {
-            const newPost = document.createElement('div');
-            newPost.classList.add('post');
-            
-            // Add timestamp
-            const timestamp = new Date().toLocaleString();
-            newPost.innerHTML = `<p>${content}</p><small>Posted at ${timestamp}</small>`;
+        const title = document.getElementById('adTitle').value.trim();
+        const description = document.getElementById('adDescription').value.trim();
+        const price = document.getElementById('adPrice').value.trim();
 
-            feed.appendChild(newPost);
-            postContent.value = ""; // clear textarea
+        if (!title || !description || !price) {
+            alert("All fields are required!");
+            return;
         }
+
+        const newAd = document.createElement('div');
+        newAd.classList.add('ad');
+        newAd.innerHTML = `
+            <h3>${title}</h3>
+            <p>${description}</p>
+            <p>Price: $${price}</p>
+        `;
+
+        
+        adsContainer.appendChild(newAd);
+
+        
+        document.getElementById('adTitle').value = "";
+        document.getElementById('adDescription').value = "";
+        document.getElementById('adPrice').value = "";
     });
 });
