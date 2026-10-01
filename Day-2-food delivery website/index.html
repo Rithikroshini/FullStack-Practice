@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiteBreeze | Food Delivery</title>
+    <meta
+      name="description"
+      content="Order fresh meals, trending dishes, and fast delivery from your favorite local restaurants."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar container">
+        <a class="brand" href="#" aria-label="BiteBreeze home">
+          <span class="brand-mark">B</span>
+          <span>BiteBreeze</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="#offers">Offers</a>
+          <a href="#restaurants">Restaurants</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-ghost">Sign in</button>
+          <button class="btn btn-primary">Order now</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero container" id="home">
+          <div class="hero-copy">
+            <div class="badge-pill">
+              <span class="badge-dot"></span>
+              Fast delivery in 20 min
+            </div>
+
+            <h1>Craving something delicious?</h1>
+            <p>
+              Explore chef-crafted meals, comfort classics, and quick bites delivered
+              fresh to your doorstep in minutes.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary large">Explore menu</button>
+              <button class="btn btn-secondary large">See offers</button>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <strong>12k+</strong>
+                <span>Orders daily</span>
+              </div>
+              <div>
+                <strong>4.8/5</strong>
+                <span>Customer rating</span>
+              </div>
+              <div>
+                <strong>150+</strong>
+                <span>Partner restaurants</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured food dish">
+            <div class="delivery-card card-floating">
+              <span class="tiny-label">Live delivery</span>
+              <div class="mini-progress">
+                <div class="progress-ring"></div>
+                <div class="delivery-person">
+                  <span>🚴</span>
+                </div>
+              </div>
+              <strong>On the way</strong>
+            </div>
+
+            <div class="food-card">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"
+                alt="Fresh burger and fries"
+              />
+              <div class="food-card-body">
+                <div>
+                  <span class="food-tag">Popular</span>
+                  <h3>Firehouse Burger</h3>
+                </div>
+                <div class="card-meta">
+                  <span>⭐ 4.9</span>
+                  <strong>$18.90</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="categories container" id="categories">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Browse by taste</p>
+              <h2>Popular categories</h2>
+            </div>
+            <a href="#" class="text-link">View all</a>
+          </div>
+
+          <div class="category-grid" id="categoryGrid"></div>
+        </section>
+
+        <section class="offers container" id="offers">
+          <div class="offer-card highlight">
+            <div>
+              <p class="eyebrow light">Limited time</p>
+              <h3>Free delivery on orders over $25</h3>
+            </div>
+            <button class="btn btn-light">Claim offer</button>
+          </div>
+
+          <div class="offer-card smaller">
+            <div>
+              <p class="eyebrow light">Weekend deal</p>
+              <h3>2-for-1 pizza nights</h3>
+            </div>
+            <button class="btn btn-light">Order now</button>
+          </div>
+        </section>
+
+        <section class="restaurants container" id="restaurants">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Top picks</p>
+              <h2>Restaurants near you</h2>
+            </div>
+            <a href="#" class="text-link">Explore more</a>
+          </div>
+
+          <div class="restaurant-grid" id="restaurantGrid"></div>
+        </section>
+
+        <section class="steps container">
+          <div class="section-heading center">
+            <div>
+              <p class="eyebrow">How it works</p>
+              <h2>Order in 3 simple steps</h2>
+            </div>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <h3>Choose your meal</h3>
+              <p>Browse local favorites, trending dishes, and healthy picks.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">02</span>
+              <h3>Track in real time</h3>
+              <p>Watch your rider move closer while your food is prepared.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <h3>Enjoy fresh delivery</h3>
+              <p>Receive hot, carefully packed meals at your door in minutes.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="reviews container" id="reviews">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Testimonials</p>
+              <h2>What people love</h2>
+            </div>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="review-head">
+                <div class="avatar">A</div>
+                <div>
+                  <strong>Amelia R.</strong>
+                  <span>Verified customer</span>
+                </div>
+              </div>
+              <p>
+                “The ordering experience was super smooth and my food arrived warm and
+                perfectly packed. Definitely my go-to app.”
+              </p>
+              <div class="stars">★★★★★</div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-head">
+                <div class="avatar">J</div>
+                <div>
+                  <strong>Jason T.</strong>
+                  <span>Verified customer</span>
+                </div>
+              </div>
+              <p>
+                “I love the wide variety of restaurants and the quick delivery times. Great
+                value for every order.”
+              </p>
+              <div class="stars">★★★★★</div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-head">
+                <div class="avatar">S</div>
+                <div>
+                  <strong>Sophia M.</strong>
+                  <span>Verified customer</span>
+                </div>
+              </div>
+              <p>
+                “Amazing quality and friendly support. The app makes it easy to discover new
+                dishes every week.”
+              </p>
+              <div class="stars">★★★★★</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta container">
+          <div class="cta-box">
+            <div>
+              <p class="eyebrow light">Download the app</p>
+              <h2>Order your favorites anytime, anywhere.</h2>
+            </div>
+            <div class="cta-actions">
+              <button class="btn btn-light">App Store</button>
+              <button class="btn btn-light">Google Play</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer container">
+        <div class="footer-brand">
+          <a class="brand" href="#" aria-label="BiteBreeze home">
+            <span class="brand-mark">B</span>
+            <span>BiteBreeze</span>
+          </a>
+          <p>Fresh meals, fast delivery, and better neighborhood dining.</p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h4>Company</h4>
+            <a href="#">About us</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="#">Help center</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
